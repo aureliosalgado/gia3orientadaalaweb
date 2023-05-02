@@ -18,7 +18,7 @@ class Cserializar {
     /** Recuperamos los datos almacenados en el archivo */
     public static function deserializar() {
         try {
-            $arreglo_serializado = file_get_contents('persona.store');
+            $arreglo_serializado = file_get_contents('Datos de la persona.store');
             $listaPersonas = unserialize($arreglo_serializado);
             if(!is_array($listaPersonas))
                 $listaPersonas = array();
